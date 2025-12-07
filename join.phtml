@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="./css/index.css" >
+
+      <title>Santa Clara Tennis Club</title>
+
+   <!-- Google reCAPTCHA CDN -->
+
+   <script src=  "https://www.google.com/recaptcha/api.js" async defer> </script> 
+
+<!--
+    https://stackoverflow.com/questions/40055382/how-to-call-javascript-function-only-when-checkbox-is-checked
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <style>
+            .table-sctc{
+              font-size: .8em;
+              background-color: light-blue;
+
+            }
+
+            .table-sctc tr {line-height: .05em}
+            .table-sctc td {height: .5em}
+            .table-sctc th{ height: .5em; font-weight: normal}
+        </style>
+
+         <script>
+            function stickyheaddsadaer(obj) {
+                  if($(obj).is(":checked")){
+                          document.getElementById("id_waitlist").style.display = "block"
+                  }else{
+                          document.getElementById("id_waitlist").style.display = "none"
+                  }
+            }
+
+<!--------------------------------------------------- -->
+            document.addEventListener("DOMContentLoaded", function() {
+            // Your JavaScript code to manipulate the DOM goes here
+             console.log("DOM is ready!");
+             const textBox = document.getElementById('FamilyList');
+             textBox.style.display = 'none';
+
+
+             const radioForm = document.getElementById('MemberForm');
+             console.log(radioForm)
+
+             radioForm.addEventListener('change', function(event) {
+                 console.log("DOM addEventListener")
+ 
+               
+                 switch(event.target.value){
+                  
+                    case 'RF':
+                    case 'NRF':
+                         console.log(" FAMILY ")
+                         textBox.style.display = 'block';
+                         break;
+                    case 'RS':
+                    case 'NRS':
+                         console.log("SINGLE ");
+                         textBox.style.display = 'none';
+                         break
+
+                 }
+
+             })
+
+
+            }); // End of  outside addEventListener
+
+
+<!--------------------------------------------------- -->
+
+
+
+           $(document).ready(function() {
+            
+/*
+               console.log("READY");
+               const radioForm = document.getElementById('MemberForm');
+               console.log(radioForm)
+
+               radioForm.addEventListener('change', function(event) {
+               console.log("DOM addEventListener")
+               
+               console.log("READY DONE");
+
+*/
+            })
+
+<!--
+
+   //               document.getElementById("id_waitlist").style.display = "block"
+  //                document.getElementById("id_waitlist").style.display = "none"
+
+    //              const radioButtons = document.querySelectorAll('input[name="member"]');
+
+                  // *****************************************************
+
+/*
+                  const radioForm = document.getElementById('MemberForm');
+
+                  radioForm.addEventListener('change', function(event) {
+                        alert("radio")
+                        //console.log("not checked")
+                  if (event.target.type === 'radio' && event.target.checked) {
+                        console.log('Selected value:', event.target.value);
+                      // Perform actions based on the selected radio button
+                  }
+                  });
+*/
+
+
+                  // ****************************************************
+-->
+
+</script>
+
+</head>
+<body class="Back" >
+
+ 
+</p>
+<div class="container-sm ">
+      <div class="row">
+      <div class="col-sm-1">  </div>            
+       <div class="col-sm-10 "><center> <img   class="ResponsiveImage"   src="images/banner_main2.png"></center> </div>
+      <div class="col-sm-1">
+      </div>
+      </div>  
+      
+      </div>
+
+<div class="container-sm Title">
+    <div class="row">
+      <div class="col-sm-12"> 
+           <center>
+            Santa Clara Tennis Club
+<!--        <?php include "./imports_/title.php" ?>  -->
+        </center>
+      </div>
+    </div>
+
+
+</div>
+
+<div class="container-sm ">
+      <div class="row">
+            <div class="col-sm-1"> </div> 
+            <div class="col-sm-10 NavLink"> 
+                  <?php include "./imports_/navlink.php" ?>
+             </div>
+
+      <div class="col-sm-1"> </div> 
+      </div>
+  
+  
+  </div>
+
+  <div class="container-sm ">
+      <div class="row">
+
+            <div class="col-sm-12">&nbsp;</div>
+            <div class="col-sm-12">&nbsp;</div>
+
+            <div class="col-sm-12 text-center">
+            
+            <img src="./images/SCTCLogot.png">
+            <p>&nbsp;
+      </div> 
+      </div>
+  
+  
+  </div>
+  
+
+
+
+  <div class="container">
+      <div class="row ">
+        <div class="col-sm-1 ">
+        </div>
+        <div class="col-sm-10">
+
+            <h4>For information on filling out the membership form, refer to the <a href="./membership"> Membership </a> page.
+            Current members are listed on the <a href="./members">Members </a> page.
+            </h4>
+
+            <p>
+            <?php
+
+                  include "./library/include.inc";
+                  include "./library/paypal.inc";
+                  include "./library/emailer.php"; 
+ 
+                  include "join_/joinsctc.php";
+            ?>
+
+      </div>
+
+        </div>
+
+        <div class="col-sm-1"></div>
+      </div>
+
+      <div class="container-sm ">
+            <?php
+            include "./imports_/footer.php";
+          ?>
+        
+        
+        </div>
+
+
+
+
+      
+</body>
+</html>

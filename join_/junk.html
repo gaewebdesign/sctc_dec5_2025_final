@@ -1,0 +1,409 @@
+Delivered-To: tennis.mutt@gmail.com
+Received: by 2002:a05:7000:bb19:b0:60a:d05d:e648 with SMTP id jd25csp4573325mab;
+        Sat, 5 Apr 2025 16:28:47 -0700 (PDT)
+X-Forwarded-Encrypted: i=2; AJvYcCVqmTJ5e7FWKqXpzk+Gom/RGtdvDxFlrE1kCI3v5kzDmoZVfxT3ofzvU6aKhwci2IKhmkTlcChEMoG0RQ==@gmail.com
+X-Google-Smtp-Source: AGHT+IEbEoGmDGh/Tevj6xq7Q3vVPivbhZ6u5WGpSlmyEz/2Z5V5BVILvRBr+rAdKRVAQXBcNWzh
+X-Received: by 2002:a05:6214:21af:b0:6d8:9d81:2107 with SMTP id 6a1803df08f44-6f05852937bmr132571196d6.20.1743895726931;
+        Sat, 05 Apr 2025 16:28:46 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1743895726; cv=none;
+        d=google.com; s=arc-20240605;
+        b=TrUZ5cIskAugAcEdV8sQPfquQ5oTogKHEg2scKa6SMqmeMDHElXmla4Rh6j3Y5ZDZy
+         5fo6s/3TuUGVd44BCuWuIglz2W+5TrTEHREVbv5eRSqinjSnko16HrDz7uM1MvOd8Isp
+         Qf5SefYspwKwbxj68EDdYUOgCRjcNe6qMvd9xFRfrUftddZKvPrXeM1lubJWh5Trrt7q
+         DyDHYLrD4I1I6rz27dLp5WDZDpPYh8OzTvRjgQaiCNTozLvP1v1x/uvQwPraNFdB0JC3
+         7MD6CliQ8eGueF3FJyl0YnyXKYz4mlafgHLIw07FQ3WrQxfPHiGT1zAR/s3XfEYKwJOG
+         u45A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=references:mime-version:subject:message-id:to:from:date
+         :dkim-signature;
+        bh=3PkVzHrci5J5KPBClF/ibkNeiObPa8ynS1Y6Y4HvYzw=;
+        fh=uciI9G+gL1PUl8BI2A9ttk4+FIv2wWDaD+x9fA1/jc0=;
+        b=Eb+oFTJxpmRjH8gmlxTdUH5yiJ3gFr7ntzkQ54YHUvPcIWRs0QsGU0AvPYH565rlMT
+         RoFFchgT/e2lC95ncYAQyNXBiZI8brlUmEZt4+6YCFoNiEt2jjsiEe6YEoujm0IM5vFh
+         Yi/VAQvlxWj3MX12NwSQhT+Rc8bz8/O95f3pMC1pQlvmYO88tGrNq/yikANr21qaOeWg
+         idv4IsYVF1/+T5n8CpsNvkAAeQjPjak8YL793h4IO1G7/TGd8Bkf7RG4KeVceKnPSeP+
+         zvVptylJtOI9nK/pvR8ItsgvaiO0VdkYi6uWP9MFOVL+jLxoVi4fnE1trwf64uYIbu2q
+         hHRA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@yahoo.com header.s=s2048 header.b=VMeEAZhq;
+       spf=pass (google.com: domain of queenb_95051@yahoo.com designates 66.163.184.201 as permitted sender) smtp.mailfrom=queenb_95051@yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yahoo.com
+Return-Path: <queenb_95051@yahoo.com>
+Received: from sonic301-32.consmr.mail.ne1.yahoo.com (sonic301-32.consmr.mail.ne1.yahoo.com. [66.163.184.201])
+        by mx.google.com with ESMTPS id 6a1803df08f44-6ef0efc45dasi57153946d6.90.2025.04.05.16.28.46
+        for <tennis.mutt@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sat, 05 Apr 2025 16:28:46 -0700 (PDT)
+Received-SPF: pass (google.com: domain of queenb_95051@yahoo.com designates 66.163.184.201 as permitted sender) client-ip=66.163.184.201;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@yahoo.com header.s=s2048 header.b=VMeEAZhq;
+       spf=pass (google.com: domain of queenb_95051@yahoo.com designates 66.163.184.201 as permitted sender) smtp.mailfrom=queenb_95051@yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=yahoo.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1743895725; bh=3PkVzHrci5J5KPBClF/ibkNeiObPa8ynS1Y6Y4HvYzw=; h=Date:From:To:Subject:References:From:Subject:Reply-To; b=VMeEAZhq+OkgqaWRwBZYy9bH5K3UkyHzjKcy+wy2mOrNzdjqEMUKwLXLCbDwk+VAxBfM3dfy9Ay51Vxbe95FTIt93Rpt44fZ7s+fRzHI5Qpq+GsPJRdH81905mhBaxpTN+ovxNoL7nKlMvMSAGMGxxam5mJmaGiwBz7kcLSRgl2vY7/5bVaDglYW5uMWhqP+AyiYE0BaTlDyjE238NS/JG4BSLjVdPzrO/RolQnqqP/bqJ1TYPRqmy/tdsl+bpA0mH2N2+VfQn0GVsjrxqKzwpYmYSaJFf0psb1UaRMKsEUaT8S0+QoRdSa1BfOihKhUi2Rjgopst28J4k0m9EhKhg==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1743895725; bh=rvUzAYpnxK6jL8OjkEEuzaK9z8Lktf9udMdCB/piB6p=; h=X-Sonic-MF:Date:From:To:Subject:From:Subject; b=mIOsIEXIDfztL+aP9mgJtQiODhHmV5DCxVilyqwLWqoYn9UnewfpkngSgO3Yoko3YLoTnWnJsFCK9nG68UJNahZZx+CF97qUFz8na0rT1KSQ0dwLoWYvLURxq8boPQf4u+K+0iKVDU1fh9pVZT8EMN2xZ+g68POmhG5W1zrYkS74KY9flsV01Gd/WhwYzhlYWadAoKOtiGt/sS2ZACYvl/wIa47ageAMKk1lXSIFYddfOiV0LXPof++ylKh6up+/r2soyspNWPooSt09mXkJt8sxFpcL3SwOhn127eaWj7E/N1/oIHVc0iqAGNMa3RpEOlup7umyzc2XqMEoD1ZtWw==
+X-YMail-OSG: 9FCcnXwVM1kW8zUbCBH9Zj6zxgi5qV_PFoalszbbpG0XnxDZ2VkmGvseL0bDphl hQpG0zbGTH_2YfSPBoyb758sjoSPhKOWhCFTNTjou6wRCwTjU10Vnew1GnIfgNCI.1IqOhBRrlTz hEGmMSIR8.VK9k2ieGT2dU1Vn9HCy_e3Muej_b1lCBGXwEECdEsF7qpS44pqwd3oSiXFxEDyew8s LjbQ4v84WMZGt_f5pydjvdom0mS9kk1swrte9HkdcjEs532C.xW.AFG8wQtIEHeRPf7mvUvKamSv VSf3UvIOdZ3rK5NLrEccKWvdFuAe3t.uNfbAb1P3PgOkJeEPznKGU2A81ZIRKw6qNly3at5QThwL 7C9e1pRnmzugJdYXuNeyxVaRnnpgevTkJaoDGQeEHM0LT6A_gmxTpkMaaGy6qf_NFVH1qKFhvCz5 fJANnrRb7wBBu67viZZLkHVQqMN_vFXbbISn_mn5Re8xQ7d2r1dinh19qsYiCcRyehFDtE1rE1J7 5cnzcWBcQzqJZtNSQ5EEGH7mS3U0xQn57fKIp..jK.j1qqRitvn4W1UqVVPZX8mrSUvtqBSjLL_i otc1.rFIQupbWGTiQ3pWs459chIF7zNZb5Mf9LSwfKyqrju1sIo24IzPHTGMPbJ0d6_NJRBDEoab 2akoQVRftsdTEWUpPcEiFAwKU15DzsvBHYXXvMCuSernbY2QVmKjC7HJY5EjAErQRSTRcnZjceJW ph69oSZ4DxmBU6oKiOboAymMnn9JJ1yYUS76PFGlYES_HBm0.D6WNGsJkVH.OBqdiVhCE08H2RZK Scl65CNT7aHdQcA5ww18RdPWKaLcTPefXXDT9u4mXy33tA83WSXkupG_I1j74jZuLueA3U_khhWX iS134WgdRvyB4u4pbJ8ZyLfmcGZZi_Z6FCXg9rve0HM_rTG4m06sqb0GrcpxGeAMrTYSfMiYZRTF _SxLQmvACh9Sd1qBV8odT.YieHStnYc7dmveO3aixVFUZq.hGjYIoh4CXlHzVwKJwxafKB4UiqWb eF6wq8KoMQzpJ3jylHr51VNH3uZSIcOI2Y4imuYmxLiCb_Vt.k0IEBaLFr4rAKMPaPT3WKhb1mS2 xCff4QvfbfwitWc6JpoJbmuQb8DKLCx8MiB4w87u2_R5RyXrLpzEpEl1J_ljIZmwpHegY7W3Sd2Y 1lsCn2PfQ_XB.PjZLg04ZD2OFhwI1WMZ_3UgI5N1uHwfnGQzIt3BaxYlK4Wy6Vu0eaRbIucbvXNG mxUJcHoQL1JG72eBmNGG0.7XInGRrMgUHHRVKm6jQTd5t9fc_Z5ecystw3BQcHJ_4uKf8Nwuy23r kSw9z1VX1ADT5VRTqO6mV9wTY6jDmR0OvA0tFaKQF6u3kptqGaZ4SVYhr509VjIrFrnrpUejbHa1 dZgH0rtZs8RNSEn8Dp9Zk845VUANGoqlmB128E8g5L5xoP4RmN7wUi32RxScwtbG90k7A0v64sTD cNg.OnLXrK4HWNVcsVLVGTLnq6Hch5kkQdAmiW.rV1PSs3qNJYXAmcY0KEhrKaa7FhhaFDpMYLoC tCIr4vk7YREslDS65rRKszFmuKg9sGmnty5Sedsb4xV7Az05T7yi1LeHX06n50jKYEiSMqB1C.m_ hSMUZ3KV4ngwWxwQoJq3fMFnnG6x4caFz5WFvSbQwhoI7.tkvwePDciK8IBM9h1wQyWyT0y19jwe 74m7G0Wx4YfC9yLDeqomI1CGQ1013cqGWIspl17OFaxcHh4TSwRcDcOegNusdN3xuCfx6dyT9D68 _ZPlE..qdvCPQ2mEqJDgAW_49JkU.NbLDOmt9W2RjGrlnj0NG7a20aietqdgnKaLJBE7nE9UmnBg VE3w7VA72fBFJqKkAHOLV6_P68zufWUFjuuTJFXrJJOQZkI65bPbW5GFL.oyZEexSwK.iu_D2xeY qo14KcZ5fRz9oQIs8gO_yTZHugiUd5TfgQ7Uk_sPlB5utjY7pEYrimL25rIpSNuqg72SkUh0dckc rWc5WY5.OG3sZRvrmB4hjtrD0yCKRwjwf3cwfQ3O1Q1ZtpGK6LQ7I3O17SLg.HhxMPsIobn68PpH 1i2U9eqF5anxtrq09llFznAzdzRNPPMoeYkuhV5dA5QA87CwPOMzJUyGH8q85Ad7nFbolKlWF.AX O9Rcgxj2TMCMYsho217KsdsXZTX6523KcJnNZjH3uoW5VRPXle7ndOKTtP3xlcDk3_UHmkHZJohW vLvDVrDltGTsUbgRjmbWi
+X-Sonic-MF: <queenb_95051@yahoo.com>
+X-Sonic-ID: 7e3b89f3-6bf0-401e-ba7c-15e9611dd1b2
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic301.consmr.mail.ne1.yahoo.com with HTTP; Sat, 5 Apr 2025 23:28:45 +0000
+Date: Sat, 5 Apr 2025 23:28:44 +0000 (UTC)
+From: Jeanette Hoggatt <queenb_95051@yahoo.com>
+To: Jeanette Hoggatt <queenb_95051@yahoo.com>
+Message-ID: <1981827329.2143054.1743895724131@mail.yahoo.com>
+Subject: SCTC NEWSLETTER APRIL 2025
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="----=_Part_2143053_1371537068.1743895724129"
+References: <1981827329.2143054.1743895724131.ref@mail.yahoo.com>
+X-Mailer: WebService/1.1.23590 YMailNovation
+Content-Length: 11011
+
+------=_Part_2143053_1371537068.1743895724129
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Greetings from SCTC Board!=C2=A0 We had a great turnout for our March Mixer=
+ and NO RAIN!=C2=A0 Woot Woot!=C2=A0 We have several events this year, incl=
+uding a couple of tennis and lunch and an interclub!=C2=A0 And try our new =
+ladder!=C2=A0 Tons of fun!=C2=A0 Hope you come out and join us!
+Coming up next weekend:
+April 11 ClinicApril 12 Mixer
+May 3 - Cinco de Mayo Mixer and Lunch (signups are now open)
+MEMBERSHIP
+=C2=A0
+
+The Santa Clara Tennis Club is a community tennisassociation sponsored by t=
+he city of Santa Clara for the purpose of fosteringtennis participation in =
+Santa Clara. Club memberships run January throughDecember and may be renewe=
+d for the following year. Please read the membershipinstructions on the web=
+site!
+
+Refer to the info page for a summary of membership benefits:=20
+
+=C2=A0
+
+2025 MEMBERSHIP FEES=20
+
+=C2=A0
+
+Single
+Santa Clara Residents $30=20
+Non Residents $35=20
+
+Family
+Santa Clara Residents $30 *=20
+Non Residents $45 *=20
+
+* $0.99 for each additional family member=20
+
+Check your membership status here.
+
+You may fill out an online version of the Membership Form
+
+=C2=A0
+
+CLINICS - SC Tennis Center Fridays 7:30-9PM courts=C2=A07 & 8
+
+April 11
+
+May 16
+
+June 13
+
+August 22
+
+September 19
+
+=C2=A0
+
+MIXERS - SC Tennis Center Saturdays 9AM-12PM courts6, 7, 8
+
+April 12
+**May 3 Cinco de Mayo=20
+- Food will be provided by Orale Baja 1750 WinchesterBoulevard, Campbell=C2=
+=A0(Includes two street tacos(chicken or carnitas, a few veggie) and a serv=
+ing of frijoles con queso)
+-Cost via PayPal $15.00 per person, includes tennis andlunch
+
+-Signup is now open, limited to 25 participants!!!
+
+-Deadline to signup is April 23, 2025
+
+-Tennis only, no lunch, $5.00 upon arrival=20
+-Sorry, no last minute lunch requests
+
+June 14
+
+July 12 Bob Hughes Memorial Pig Out
+
+August 23 Ice Cream Social
+
+September 27
+
+October 11
+
+=C2=A0
+
+INTERCLUB AT MOUNTAIN VIEW TENNIS CLUB
+
+September 20 =E2=80=93 9AM-1PM
+
+Rengstroff Courts
+
+=C2=A0
+
+ANNUAL TENNIS DINNER=20
+
+November 14 - to be announced at a later date
+
+=C2=A0
+
+
+
+SCTC TENNIS LADDER=20
+
+Rules
+
+
+All players must be Santa Clara Tennis Club members=20
+Sign up with the email address used in your membership registration=20
+Email address must be unique - two people cannot sign up with the same emai=
+laddress.=20
+All matches must be played at Santa Clara Tennis Center=20
+All NTRP ratings eligible=20
+FREE to join for SCTC members, players pay for court fees and tennis balls=
+=20
+
+
+Players may only challenge an opponent within a 0.5 rating point=20
+i.e. a 3.5 may challenge a 3.0,3.5 or 4.0 player=20
+i.e. a 4.0 may challenge a 3.5,4.0 or 4.5 player=20
+
+Point System
+
+
+New entries receive a starting point total which is approxmately the averag=
+epoints of participants in the division minus 30%=20
+The winner receives 1/2 of the higher match participant's points=20
+The loser receives 1/2 of the lower match participant's points=20
+
+Examples:=20
+If #1 plays #10 and wins -- the points won by #1 is 1/2 the #1 point total=
+=20
+If #10 plays #1 and wins -- the points won by #10 is 1/2 the #1 point total=
+=20
+
+Suggested:=20
+
+
+Finish matches in one 1-1/2 hour court reservation, so play a 3rd set super=
+-tie
+Both players bring a new can of balls to the match, the winner gets the unu=
+sedcan of balls=20
+Split the court fees
+
+=C2=A0
+
+
+------=_Part_2143053_1371537068.1743895724129
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><div class=3D"ydp1fc7886fyahoo-style-wrap" style=
+=3D"font-family:times new roman, new york, times, serif;font-size:16px;"><d=
+iv dir=3D"ltr" data-setdir=3D"false">Greetings from SCTC Board!&nbsp; We ha=
+d a great turnout for our March Mixer and NO RAIN!&nbsp; Woot Woot!&nbsp; W=
+e have several events this year, including a couple of tennis and lunch and=
+ an interclub!&nbsp; And try our new ladder!&nbsp; Tons of fun!&nbsp; Hope =
+you come out and join us!</div><div dir=3D"ltr" data-setdir=3D"false"><br><=
+/div><div dir=3D"ltr" data-setdir=3D"false">Coming up next weekend:</div><d=
+iv dir=3D"ltr" data-setdir=3D"false"><br></div><div dir=3D"ltr" data-setdir=
+=3D"false">April 11 Clinic</div><div dir=3D"ltr" data-setdir=3D"false">Apri=
+l 12 Mixer</div><div dir=3D"ltr" data-setdir=3D"false"><br></div><div dir=
+=3D"ltr" data-setdir=3D"false">May 3 - Cinco de Mayo Mixer and Lunch (signu=
+ps are now open)<div class=3D"ydp7f5264f0pasted-link" dir=3D"ltr" data-setd=
+ir=3D"false"><b><br></b></div><div class=3D"ydp7f5264f0pasted-link" dir=3D"=
+ltr" data-setdir=3D"false"><b>MEMBERSHIP</b>
+
+<div class=3D"ydp719c94d7pasted-link"><p class=3D"ydp719c94d7MsoNormal"><b>=
+&nbsp;</b></p>
+
+<p class=3D"ydp719c94d7MsoNormal">The Santa Clara Tennis Club is a communit=
+y tennis
+association sponsored by the city of Santa Clara for the purpose of fosteri=
+ng
+tennis participation in Santa Clara. Club memberships run January through
+December and may be renewed for the following year. Please read the members=
+hip
+instructions on the website!</p>
+
+<p class=3D"ydp719c94d7MsoNormal">Refer to the <a href=3D"https://www.scten=
+nisclub.org/info.html" rel=3D"nofollow" target=3D"_blank">info</a> page for=
+ a summary of membership benefits: </p>
+
+<p class=3D"ydp719c94d7MsoNormal">&nbsp;</p>
+
+<p class=3D"ydp719c94d7MsoNormal"><b>2025 MEMBERSHIP FEES </b></p>
+
+<p class=3D"ydp719c94d7MsoNormal">&nbsp;</p>
+
+<p class=3D"ydp719c94d7MsoNormal">Single<br>
+Santa Clara Residents $30 <br>
+Non Residents $35 </p>
+
+<p class=3D"ydp719c94d7MsoNormal">Family<br>
+Santa Clara Residents $30 * <br>
+Non Residents $45 * </p>
+
+<p class=3D"ydp719c94d7MsoNormal">* $0.99 for each additional family member=
+ </p>
+
+<p class=3D"ydp719c94d7MsoNormal">Check your membership status <a href=3D"h=
+ttps://www.sctennisclub.org/members" rel=3D"nofollow" target=3D"_blank">her=
+e</a>.</p>
+
+<p class=3D"ydp719c94d7MsoNormal">You may fill out an online version of the=
+ <a href=3D"https://www.sctennisclub.org/join" rel=3D"nofollow" target=3D"_=
+blank">Membership Form</a></p>
+
+<p class=3D"ydp719c94d7MsoNormal">&nbsp;</p>
+
+<p class=3D"ydp719c94d7MsoNormal"><b>CLINICS </b>- SC Tennis Center Fridays=
+ 7:30-9PM courts
+&nbsp;7 &amp; 8</p>
+
+<p class=3D"ydp719c94d7MsoNormal"><b>April 11</b></p>
+
+<p class=3D"ydp719c94d7MsoNormal">May 16</p>
+
+<p class=3D"ydp719c94d7MsoNormal">June 13</p>
+
+<p class=3D"ydp719c94d7MsoNormal">August 22</p>
+
+<p class=3D"ydp719c94d7MsoNormal">September 19</p>
+
+<p class=3D"ydp719c94d7MsoNormal">&nbsp;</p>
+
+<p class=3D"ydp719c94d7MsoNormal"><b>MIXERS</b> - SC Tennis Center Saturday=
+s 9AM-12PM courts
+6, 7, 8</p>
+
+<p class=3D"ydp719c94d7MsoNormal"><b>April 12</b></p>
+
+<div class=3D"ydp719c94d7MsoNormal"><b>**May 3 Cinco de Mayo <br></b></div>=
+<div class=3D"ydp719c94d7MsoNormal" dir=3D"ltr" data-setdir=3D"false"><b><d=
+iv>
+
+<div class=3D"ydp719c94d7MsoNormal"><span style=3D"font-weight: normal;">- =
+Food will be provided by Orale Baja 1750 Winchester
+Boulevard, Campbell</span></div><div class=3D"ydp719c94d7MsoNormal"><span s=
+tyle=3D"font-weight: normal;">&nbsp;(Includes two street tacos
+(chicken or carnitas, a few veggie) and a serving of frijoles con queso)</s=
+pan></div><span style=3D"font-weight: normal;"></span><span style=3D"font-w=
+eight: normal;">
+
+</span><p class=3D"ydp719c94d7MsoNormal"><span style=3D"font-weight: normal=
+;">-Cost via PayPal $15.00 per person, includes tennis and
+lunch</span></p><span style=3D"font-weight: normal;">
+
+</span><p class=3D"ydp719c94d7MsoNormal"><span style=3D"font-weight: normal=
+;">-Signup is now open, limited to 25 participants!!!</span></p><span style=
+=3D"font-weight: normal;">
+
+</span><p class=3D"ydp719c94d7MsoNormal"><span style=3D"font-weight: normal=
+;">-Deadline to signup is April 23, 2025</span></p><span style=3D"font-weig=
+ht: normal;">
+
+</span><p class=3D"ydp719c94d7MsoNormal"><span style=3D"font-weight: normal=
+;">-Tennis only, no lunch, $5.00 upon arrival </span></p><span style=3D"fon=
+t-weight: normal;">
+
+</span><div class=3D"ydp719c94d7MsoNormal"><span style=3D"font-weight: norm=
+al;">-Sorry, no last minute lunch requests</span></div></div></b><b><br></b=
+></div>
+
+<p class=3D"ydp719c94d7MsoNormal">June 14</p>
+
+<p class=3D"ydp719c94d7MsoNormal">July 12 Bob Hughes Memorial Pig Out</p>
+
+<p class=3D"ydp719c94d7MsoNormal">August 23 Ice Cream Social</p>
+
+<p class=3D"ydp719c94d7MsoNormal">September 27</p>
+
+<p class=3D"ydp719c94d7MsoNormal">October 11</p>
+
+<p class=3D"ydp719c94d7MsoNormal">&nbsp;</p>
+
+<p class=3D"ydp719c94d7MsoNormal"><b>INTERCLUB AT MOUNTAIN VIEW TENNIS CLUB=
+</b></p>
+
+<p class=3D"ydp719c94d7MsoNormal">September 20 =E2=80=93 9AM-1PM</p>
+
+<p class=3D"ydp719c94d7MsoNormal">Rengstroff Courts</p>
+
+<p class=3D"ydp719c94d7MsoNormal">&nbsp;</p>
+
+<p class=3D"ydp719c94d7MsoNormal"><b>ANNUAL TENNIS DINNER </b></p>
+
+<p class=3D"ydp719c94d7MsoNormal">November 14 - to be announced at a later =
+date</p>
+
+<p class=3D"ydp719c94d7MsoNormal">&nbsp;</p><br><div class=3D"ydp719c94d7Ms=
+oNormal"><br></div>
+
+<p class=3D"ydp719c94d7MsoNormal"><b>SCTC TENNIS LADDER </b></p>
+
+<p class=3D"ydp719c94d7MsoNormal">Rules</p>
+
+<p class=3D"ydp719c94d7MsoNormal"><br>
+All players must be Santa Clara Tennis Club members <br>
+Sign up with the email address used in your membership registration <br>
+Email address must be unique - two people cannot sign up with the same emai=
+l
+address. <br>
+All matches must be played at Santa Clara Tennis Center <br>
+All NTRP ratings eligible <br>
+FREE to join for SCTC members, players pay for court fees and tennis balls =
+</p>
+
+<p class=3D"ydp719c94d7MsoNormal"><br>
+Players may only challenge an opponent within a 0.5 rating point <br>
+i.e. a 3.5 may challenge a 3.0,3.5 or 4.0 player <br>
+i.e. a 4.0 may challenge a 3.5,4.0 or 4.5 player </p>
+
+<p class=3D"ydp719c94d7MsoNormal">Point System</p>
+
+<p class=3D"ydp719c94d7MsoNormal"><br>
+New entries receive a starting point total which is approxmately the averag=
+e
+points of participants in the division minus 30% <br>
+The winner receives 1/2 of the higher match participant's points <br>
+The loser receives 1/2 of the lower match participant's points </p>
+
+<p class=3D"ydp719c94d7MsoNormal">Examples: <br>
+If #1 plays #10 and wins -- the points won by #1 is 1/2 the #1 point total =
+<br>
+If #10 plays #1 and wins -- the points won by #10 is 1/2 the #1 point total=
+ </p>
+
+<div class=3D"ydp719c94d7MsoNormal" align=3D"center" style=3D"text-align:ce=
+nter">
+
+<hr size=3D"2" width=3D"100%" align=3D"center">
+
+</div>
+
+<p class=3D"ydp719c94d7MsoNormal">Suggested: </p>
+
+<p class=3D"ydp719c94d7MsoNormal"><br>
+Finish matches in one 1-1/2 hour court reservation, so play a 3rd set super=
+-tie
+<br>
+Both players bring a new can of balls to the match, the winner gets the unu=
+sed
+can of balls <br>
+Split the court fees</p>
+
+<p class=3D"ydp719c94d7MsoNormal">&nbsp;</p>
+
+</div><br></div></div></div></body></html>
+------=_Part_2143053_1371537068.1743895724129--

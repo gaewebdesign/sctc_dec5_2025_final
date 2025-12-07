@@ -1,0 +1,245 @@
+
+.RESP_IMAGE{
+ max-width: 100%;
+ height: auto;
+}
+
+:root {
+
+     --develop-color: rgb(204,204,255);
+     --COLORTHEME : rgb(202,233,245);
+     --COLORTHEME_EMAIL : rgb(240, 194, 213);
+
+
+}
+
+
+
+.Develop{
+
+    background-color: rgb(186, 240, 155);
+    background-color: rgb(204, 204, 255);
+    background-color: var(--develop-color);
+    
+
+    /*  */
+
+}
+
+.Back{
+
+    background-color: rgb(224, 236, 245);
+    background-color: "CAE9F5";
+
+
+    background-color: rgb(202,233,245);
+    background-color: var(--COLORTHEME );
+
+}
+
+.BackInput{
+
+    background-color: rgb(210, 230, 210);
+    background-color: rgb(204, 204, 255);
+
+    background-color: rgb(240,248,255);
+
+
+}
+
+.BackEmail{
+
+    background-color:  var(--COLORTHEME_EMAIL);
+}
+
+.pBackDebug{
+
+    background-color: rgb(38, 232, 215);
+}
+
+.BackGradient{
+
+    background-image: linear-gradient(to bottom right, red, yellow);
+    background-image: linear-gradient(to  bottom right, red,orange,yellow,green,blue,indigo,violet);
+    
+    background-image: linear-gradient(to  bottom right, rgb(241, 92, 116),rgb(200, 214, 214),rgb(210, 210, 200),rgb(190, 216, 218),rgb(215,205,240),rgb(241,92,116)) ;
+
+
+}
+
+.BackBarbecue{
+
+    background-color: rgb(223,83,16);
+
+    background-color: "DF5310";
+}
+
+.Title{
+
+    position: center;
+    font-size: 48px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(189, 205, 243);
+}
+
+
+.LeftBar{
+
+    color: white;
+    background-color: rgb(102, 102, 157);
+    background-color: rgb(75, 9, 229);
+    background-color: rgb(224, 176, 255);
+    background-color: rgb(204, 204, 255);
+
+    background-color: rgb(99, 4, 48);
+    
+    background-color: rgb(90, 42, 129);
+
+      
+
+    font-size: 15px;
+    font-style: bold;
+}
+
+.RightBar2{
+
+    color: white;
+    background-color: rgb(51, 51, 241);
+    font-size: 14px;
+
+}
+
+.RightCenter{
+
+
+    display: flex;
+    align-items: center;
+    background-color: rgb(254,254,254);
+
+}
+
+   
+    
+
+
+.Link{
+    color: white
+}
+
+.Link_Red{
+    color: rgb(211, 40, 40);
+    font-size: 1.25em;
+
+}
+
+.Link_Purple{
+    color: rgb(121, 60, 220);
+    font-size: 1.25em;
+
+}
+
+.Link_Register{
+    color: rgb(140, 5, 70);
+    font-size: 1.35em;
+
+}
+
+.Memb_Color{
+    color: rgba(233, 118, 199, 0.147);
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.col-sm-3half, .col-sm-8half {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.ResponsiveImage {
+    object-fit: contain;
+    width: 100%;
+    height: auto
+
+
+}
+
+sctitle{
+    font-size: 1.2em;
+}
+
+@media screen and (max-width:325px) {
+
+   sctitle{
+    font-size:  .20em;
+   }
+
+}
+@media screen and (max-width:667px) {
+
+    sctitle{
+     font-size:  .25em;
+    }
+ 
+ }
+
+@media screen and (max-width:736px) {
+
+    sctitle{
+     font-size:  .50em;
+    }
+ 
+ }
+  
+
+@media (min-width: 768px) {
+    .col-sm-3half, .col-sm-8half {
+        float: left;
+    }
+    .col-sm-3half {
+        width: 29.16666667%;
+    }
+    .col-sm-8half {
+        width: 70.83333333%;
+    }
+}
+
+
+.NavLink a:hover {
+   
+    font-size: 1.2em;
+    
+}
+
+
+
+article h1 {
+    color: rgb(33, 88, 132);
+    color: purple;
+    text-shadow: rgb(132, 0, 101) -2px 0px 0px, rgb(151, 151, 151) -7px 0px 4px;
+    font-family: Speeder;
+    font-weight: bold;
+    font-size: 3.0em;
+    font-style: oblique;
+    letter-spacing: 0.03em;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+ }
+/*
+
+a{
+  color: rgb(16, 224, 228);
+  font-size: 1.5em;
+}
+
+
+a:link {
+    display: block;
+    font-size: 1em;
+    outline: thin solid;
+}
+
+
+*/

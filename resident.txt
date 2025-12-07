@@ -1,0 +1,51 @@
+2717 Forbes
+
+Mx6.0 Xiwen Zhao Captain
+Kyle Zhang  - Sunyvale
+Xiwen Zhao  - Sunnyvale   (Captain)
+Zhen Liu    - San Jose (F)
+Lexi He     - Sunnyvale (F)
+Xiaocen Shan  - Fremont (F)
+
+
+Ken Yu    - Santa Clara
+Kuan Hua  -  San Jose
+Yuron Chen   - Cupertino
+Koki Yoshida  - Palo Alto
+
+Full team
+Shiru Cao        (2024 2988 Via Torino address)
+Gary Chen
+Yurong Chen     Forbes
+Zhen Liu        Montgomery
+Xiacen Shan     Montgomery
+ vmjnHan Sun         (not 2024 member)
+Liangyu Xu      (2024 2893 Cabrillo, SC Address)
+Koki Yoshida    Forbes
+Kan Yu          Forbes    <--- Santa Clara USTA address
+Kyle Zhang      Montgomery   <--- Original RF person
+Xiwen Xhao      Montgomery  <-- Captain has Sunnyvale address
+Zhaoxia Zhao
+
+2892 Cabrillo, Santa Clara
+Eva Wu, Shiting Jiang, Liangyu Xu
+
++------+--------+---------+-------+--------+-----------------+
+| year | fname  | lname   | mtype | gender | address         |
++------+--------+---------+-------+--------+-----------------+
+| 2025 | Kan    | Yu      | RF    | M      | 2717 Forbes Ave |
+| 2025 | Kuan   | Hu      | RF_   | M      | 2717 Forbes Ave |
+| 2025 | Yurong | Chen    | RF_   | M      | 2717 Forbes Ave |
+| 2025 | Koki   | Yoshida | RF_   | M      | 2717 Forbes Ave |
+
+
++------+---------+-------+-------+--------+-------------------------+
+| year | fname   | lname | mtype | gender | address                 |
++------+---------+-------+-------+--------+-------------------------+
+| 2025 | Kyle    | Zhang | RF    | M      | 3410 Montgomery Dr #321 |
+| 2025 | Xiwen   | Zhao  | RF_   | F      | 3410 Montgomery Dr #321 |
+| 2025 | Zhen    | Liu   | RF_   | F      | 3410 Montgomery Dr #321 |
+| 2025 | Lexi    | He    | RF_   | F      | 3410 Montgomery Dr #321 |
+| 2025 | Xiaocen | Shan  | RF_   | F      | 3410 Montgomery Dr #321 |
++------+---------+-------+-------+--------+-------------------------+
+

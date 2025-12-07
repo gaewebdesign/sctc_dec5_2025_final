@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="./css/index.css" >
+
+      <title>Santa Clara Tennis Club</title>
+
+    <!-- Google reCAPTCHA CDN -->
+    <script src= 
+      "https://www.google.com/recaptcha/api.js" async defer> 
+    </script> 
+
+</head>
+<body class="Back" >
+
+ 
+</p>
+<div class="container-sm ">
+      <div class="row">
+      <div class="col-sm-1">  </div>            
+       <div class="col-sm-10 "><center> <img   class="ResponsiveImage"   src="images/banner_main2.png"></center> </div>
+      <div class="col-sm-1">
+      </div>
+      </div>  
+      
+      </div>
+
+<div class="container-sm Title">
+    <div class="row">
+      <div class="col-sm-12"> 
+           <center>
+        <?php include "./imports_/title.php" ?>  
+        </center>
+      </div>
+    </div>
+
+
+</div>
+
+<div class="container-sm ">
+      <div class="row">
+            <div class="col-sm-2"> </div> 
+            <div class="col-sm-8 NavLink"> 
+                  <?php include "./imports_/navlink.php" ?>
+             </div>
+
+      <div class="col-sm-2"> </div> 
+      </div>
+  
+  
+  </div>
+
+  <div class="container-sm ">
+      <div class="row">
+
+            <div class="col-sm-12">&nbsp;</div>
+            <div class="col-sm-12">&nbsp;</div>
+            <div class="col-sm-12 text-center">
+            <p>&nbsp;
+      </div> 
+      </div>
+  
+  
+  </div>
+  
+
+
+
+  <div class="container">
+      <div class="row ">
+        <div class="col-sm-1 ">
+        </div>
+        <div class="col-sm-10">
+            <div class="display-6">
+            <b>USTA Captain:</b> Fill out this captain registration form at least 2 weeks prior to the USTA
+            deadline to register a team.  Note that filling out the form is only for Santa Clara Tennis Club.
+            and once your team is approved, you will need to register your team on the club's
+            <a href = "https://www.ustanorcal.com/organization.asp?id=20"> Norcal USTA</a> site.
+            <br>
+              Captains should read over the captain requirements on the club's <a href="./usta">usta </a>page and
+              send in the <a href = "./docs/agree.pdf "> USTA Captain's agreement</a>.
+
+            <br>
+              Expect an email from the club's USTA coordinator <b>ustarep@</b>
+
+            <p/>
+            </div>
+
+            <p>
+            <?php
+
+                  include "./library/include.inc";
+                  include "./library/emailer.php"; 
+                  include "register_/register.php";
+            ?>
+
+      </div>
+
+        </div>
+
+        <div class="col-sm-12">
+         <p>
+        </div>
+
+        <div class="col-sm-12">
+        <p>
+        <hr/>
+         <center>USTA Team Request List </center>
+         <hr/>
+      </div>
+
+        <?php
+        include "./register_/registerlist.php";
+        ?>
+
+
+
+
+
+      </div>
+
+      <div class="container-sm ">
+            <?php
+            include "./imports_/footer.php";
+          ?>
+        
+        
+        </div>
+
+
+
+
+      
+</body>
+</html>

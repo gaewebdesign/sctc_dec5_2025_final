@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JSFiddle a9hnmcot</title>
+
+  <style>
+    body {
+  background-color: lightblue
+}
+
+p {
+  font-family: times;
+  font-size: 24px;
+  color: white;
+}
+
+div {
+  background-color: white;
+  width: 400px;
+  color: black;
+}
+
+  </style>
+
+  
+</head>
+<body>
+  <!doctype html>
+<html>
+  <head>
+    <title>HTML Demo</title>
+  </head>
+  <script>
+    function gettime() {
+
+      
+      var d = new Date() // for now
+      hour = d.getHours() // => 9
+      minute = d.getMinutes() // =>  30
+      seconds = d.getSeconds() // => 51
+
+      return hour + ":" + minute + ":" + seconds
+    }
+
+    function displaytime() {
+//      f = gettime( )
+      alert(  "" + gettime()   )
+      
+    }
+
+    function buttontext() {
+      var x = document.getElementById("rogerbutton")
+      x.innerHTML = "Warriors"
+    }
+  </script>
+  <body onload="buttontext()">
+    <h1>Welcome to Roger's CS92 DevOps home page</h1>
+    <hr />
+    <p>JFiddle for CS92 - DevOps (Roger Okamoto).</p>
+    <div>
+      Cloud DevOps - NFL powered byAWS while MLB stats uses Google Cloud.
+      <u>Bill Bellichick</u> hates using Microsoft's tablet. Also 49ers
+      <b>Kyle Shanahan</b> threw his tablet to the ground when
+      <u>Jake Moody</u> missed a 45 yard field goal. But to be fair, Moody had a
+      high ankle sprain.
+      <br />
+      The Show Time button below uses javascript to calculate the current time.
+    </div>
+    <br />
+    <button id="rogerbutton" onclick="displaytime()">
+      Show Time (Is author a Lakers Fan?
+    </button>
+    <hr />
+    <footer>&copy; 2020 tom@abcd.com</footer>
+  </body>
+</html>
+
+
+  <script>
+    function hello() {
+  
+  const d =  Date.now();
+// let years = Math.round(d.getTime() / year)
+   const now = new Date();
+  const hours = now.getHours();
+  const minutes = now.getMinutes();
+  const seconds = now.getSeconds();
+  alert("Ahoy at " + hours + ":" + minutes + ":" + seconds);
+
+}
+
+function showtime() {
+  var now = new Date();
+  alert(now);
+}
+
+  </script>
+</body>
+</html>
